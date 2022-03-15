@@ -1,0 +1,155 @@
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+body {
+    font-family: "Trirong", serif;
+   }
+a {
+    text-decoration: none;
+   }
+li {
+    list-style: none;
+   }
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
+   }
+   .nav-links a {
+    color: #fff;
+   }
+   /* LOGO */
+   .logo {
+    font-size: 32px;
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   }
+   .menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 5px 14px;
+   }
+
+   /*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+
+   #home{
+       max-width: 1400px;
+       margin: 40px auto 0 auto;
+       color: #fff;
+   }
+   .call-out, #edu, #skills, #proj, #lang, #cert, #hobbies{
+       padding: 20px;
+       box-sizing: border-box;
+       margin-bottom: 20px;
+       flex-basis: 30%;
+   }
+
+   .table{
+       font-size: 0.9em;
+       min-width: 400px;
+   }
+   .table thead tr{
+       background-color: #009879;
+       text-align: left;
+       font-weight: bold;
+   }
+   .table th,
+   .table td{
+       padding: 12px 15px;
+   }
+
+   .table tbody tr{
+       border-bottom: 1px solid #dddddd;
+   }
+
+   .table tbody tr{
+       background-color: rgb(58, 56, 56);
+   }
+
+   .call-out:nth-child(1) {background-color: rgb(41, 39, 39); border-radius: 10px;}
+   #edu { background-color: rgb(41, 39, 39); border-radius: 10px; }
+   #proj {background-color: rgb(41, 39, 39); border-radius: 10px;}
+   #skills {background-color: rgb(41, 39, 39); border-radius: 10px;}
+   #cert {background-color: rgb(41, 39, 39); border-radius: 10px;}
+   #lang {background-color: rgb(41, 39, 39); border-radius: 10px;}
+   #hobbies {background-color: rgb(41, 39, 39); border-radius: 10px;}
+   
+   footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: teal;
+    color: #fff;
+   }
+   footer a{
+       margin: 20px;
+       color: #fff;
+   }
+
+   footer a:hover{
+    background-size: 35em;
+    border-radius: 5px;
+    background-color: #4c9e9e;
+    transition: 0.3s ease;
+   }
+
+   /* APPLYING MEDIA QUERIES */
+   @media (max-width: 768px) {
+   .menu { 
+    display:none;
+    position: absolute;
+    background-color:teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+   }
+   .menu li:hover {
+    display: inline-block;
+    background-color:#4c9e9e;
+    transition: 0.3s ease;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: block;
+   }
+
+   #home {
+    margin-right: 20px;
+    margin-left: 20px;
+   }
+    #edu{
+        padding-left: 8px;
+        background-color: rgb(41, 39, 39); border-radius: 10px;
+    }}
